@@ -14,7 +14,7 @@ function App() {
       const data = await res.json();
       setAdvice(data);
     } catch (error) {
-      console.log("MY ERROR MY AHAER: " + error);
+      console.error(error);
     }
 
     setIsLoading(false);
